@@ -1,0 +1,60 @@
+/**
+ * 布局
+ */
+//头部
+.fpi-webpage-header{
+	height: 90px;
+	background-color: @wp-top-banner-background-color;
+	margin-bottom: 20px;
+	.fpi-webpage-header-content{
+		width: 1110px;
+		margin: 0 auto;
+		height: 90px;
+		background: url("../../images/header/bg.png") no-repeat right top;
+		.logo{
+			padding-top: 12px;
+		}
+		.fpi-webpage-header-content-tab{
+			padding-top: 9px;
+			height: 31px;
+			overflow: hidden;
+			& ul li{
+				float: left;
+				& a{
+					font-size: 14px;
+					display: inline-block;
+					height: 30px;
+					border: 1px solid @wp-top-banner-background-color;
+					padding: 0 30px;
+					background-color: @wp-header-tab-bg;
+					color: @wp-header-tab-font-color;
+					text-align: center;
+					line-height: 30px;
+					text-decoration: none;
+					margin-right: 8px;
+					&:hover{
+						background-color: darken(@wp-header-tab-bg, 10%);
+					}
+				}
+			}
+			& ul li.cur{
+				& a{
+					font-weight: 700;
+					border: 1px solid #4bb8de;
+					background-color: #fff;
+					color: #3bafda;
+				}
+			}
+		}
+	}
+}
+
+//底部
+.fpi-webpage-footer{
+	height: 35px;
+	line-height: 35px;
+	background-color: @wp-top-banner-background-color;
+	color: #fff;
+	font-style: arial;
+	text-align: center;
+}

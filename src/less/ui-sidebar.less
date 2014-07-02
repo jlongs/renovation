@@ -1,0 +1,50 @@
+/**
+ * ui-sidebar
+ */
+.ui-sidebar{
+	border: 1px solid @wp-panel-border-color;
+	.box-shadow(0px, 3px, 0px, 0.05);
+	.border-radius(6px);
+	.ui-sidebar-header{
+		height: 38px;
+		background-color: @wp-panel-title-bg;
+		border-bottom: 2px solid #3bafda;
+		& h1{
+			color: @wp-panel-title-font-color;
+			font-size: 14px;
+			line-height: 38px;
+			padding-left: 10px;
+		}
+	}
+	.ui-sidebar-bodyer{
+		ul.first-menu{
+			& li{
+				& a{
+					display: block;
+					height: 36px;
+					border-bottom: 1px solid #eeeef0;
+					border-top: 1px solid #fff;
+					line-height: 36px;
+					color: #808080;
+					text-decoration: none;
+					background: #f7f8f8 url("../../images/icon/i1_y.png") no-repeat 13px center;
+					padding-left: 31px;
+					&:hover{
+						background: #f7f8f8 url("../../images/icon/i1.png") no-repeat 13px center;
+					}
+				}
+				ul.sec-menu li{
+					& a{
+						background: #f7f8f8 url("../../images/icon/point.png") no-repeat 30px center;
+						padding-left: 40px;
+					}
+				}
+			}
+			& li.cur{
+				& a{
+					background: #f7f8f8 url("../../images/icon/i1.png") no-repeat 13px center;
+				}
+			}
+		}
+	}
+}

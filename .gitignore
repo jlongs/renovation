@@ -1,0 +1,13 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+/node_modules
+*.log
+*~
+*.diff
+*.patch
+.DS_Store
+.project
+.settings
