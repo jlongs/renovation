@@ -40,7 +40,11 @@ module.exports = function(grunt){
 
         copy: {
             css: {
-                files: [{ expand: true, cwd: "src/less/css", src: ["*"], dest: "dist/css/" }]
+                files: [
+                	{ expand: true, cwd: "src/less/css", src: ["*"], dest: "dist/css/" },
+                	{ expand: true, cwd: "font/Font-Awesome-3.2.1/css", src: ["*"], dest: "dist/font/" },
+                    { expand: true, cwd: "font/Font-Awesome-3.2.1/font", src: ["*"], dest: "dist/font/" }
+                ]
             }
         },
 

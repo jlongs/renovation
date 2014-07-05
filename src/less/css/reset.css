@@ -211,3 +211,8 @@ svg {
 */
   overflow: hidden;
 }
+
+/* body bg */
+.renovation-bg{
+  background-color: #dee8f1;
+}

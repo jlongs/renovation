@@ -38,3 +38,10 @@
     -o-text-overflow: ellipsis; 
     text-overflow: ellipsis; 
 }
+
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}

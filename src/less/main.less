@@ -13,16 +13,194 @@
 
 @import "ui-layout.less";
 
-@import "ui-panel.less";
+// @import "ui-panel.less";
 
-@import "ui-table.less";
+// @import "ui-table.less";
 
-@import "ui-page.less";
+// @import "ui-page.less";
 
-@import "ui-form.less";
+// @import "ui-form.less";
 
-@import "ui-button.less";
+// @import "ui-button.less";
 
-@import "ui-tabPanel.less";
+// @import "ui-tabPanel.less";
 
-@import "ui-sidebar.less";
+// @import "ui-sidebar.less";
+
+
+
+//logo翻转
+ul.overturn{
+	& li{
+		float: left;
+		& a{
+			display: inline-block;
+			margin: 9px;
+			width: 100px;
+			overflow: hidden;
+		}
+	}
+	& li.cur{
+		background-color: #51c2e6;
+	}
+}
+
+//横-图片展示
+ul.level-img{
+	& li{
+		float: left;
+		& a{
+			display: inline-block;
+			margin-right: 11px;
+		}
+	}
+	& li.clear-margin{
+		& a{
+			margin: 0;
+		}
+	}
+}
+//横-精品设计师
+ul.level-design{
+	& li{
+		width: 152px;
+		float: left;
+		text-align: center;
+		margin-bottom: 10px;
+		.level-design-img{
+
+		}
+		.level-design-txt{
+			line-height: 30px;
+		}
+		.level-design-txt{
+			& a{
+				color: #00b1e9;
+			}
+		}
+	}
+	& li.clear-margin{
+		& a{
+			margin: 0;
+		}
+	}
+}
+
+
+
+
+//首页精品案例
+.cutover{
+	overflow: hidden;
+	.cutover-control{
+		width: 421px;
+		height: 273px;
+		float: left;
+		.cutover-bottom{
+			background-color: #07a8dc;
+			height: 30px;
+			overflow: hidden;
+			& h3.cutover-bottom-txt{
+				font-size: 14px;
+				color: #fff;
+				float: left;
+				line-height: 30px;
+				font-weight: 500;
+				padding-left: 10px;
+			}
+			.cutover-bottom-tab{
+				float: right;
+				margin-top: 5px;
+				margin-right: 10px;
+				& a{
+					display: inline-block;
+					height: 8px;
+					width: 8px;
+					background-color: #83d4ee;
+					.border-radius(6px);
+					margin-right: 5px;
+					&.cur{
+						background-color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.cutover-item-v{
+		width: 150px;
+		height: 273px;
+		float: left;
+		margin-left: 10px;
+	}
+	.cutover-item-a{
+		width: 150px;
+		height: 130px;
+		float: left;
+		margin-left: 10px;
+		margin-bottom: 12px;
+	}
+}
+
+//活动大全
+.cutover-2{
+	.cutover-2-1{
+		width: 290px;
+		float: left;
+		.cutover-2-1-item{
+			margin-bottom: 6px;
+		}
+	}
+	.cutover-2-2{
+		width: 550px;
+		float: left;
+		margin-left: 6px;
+	}
+	.cutover-2-3{
+		width: 210px;
+		float: right;
+		.cutover-2-3-item{
+			margin-bottom: 7px;
+			& a{
+				display: block;
+				border: 1px solid #e8e8e8;
+				height: 76px;
+				line-height: 76px;
+				background-color: #f8f8f8;
+				color: #07a8dc;
+				font-size: 14px;
+				text-align: center;
+				& i{
+					position: relative;
+					top: 8px;
+				}
+				& span{
+					display: inline-block;
+					padding-left: 8px;
+				}
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+//装修智库 
+.think{
+	border: 1px solid #dee3e6;
+	height: 204px;
+	width: 250px;
+	.think-h{
+		height: 98px;
+		border-bottom: 1px solid #dee3e6;
+		background-color: #f8f8f8;
+		.h3{
+			font-size: 14px;
+			color: #060606;
+			float: left;
+		}
+		& span.icon{
+			float: right;
+		}
+	}
+}
