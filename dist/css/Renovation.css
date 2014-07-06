@@ -1,3 +1,8 @@
+/**
+ * Renovation one v1.0.0
+ */
+
+
 @import "reset.css";
 @import "text.css";
 @import "1120-16-fpi.css";
@@ -69,6 +74,37 @@
 .index-header .h-infomation {
   float: right;
 }
+.index-header .h-infomation .h-infomation-l {
+  float: left;
+}
+.index-header .h-infomation .h-infomation-l .h-infomation-l-1 {
+  margin-top: 15px;
+  text-align: right;
+}
+.index-header .h-infomation .h-infomation-l .h-infomation-l-1 a {
+  display: inline-block;
+  margin-left: 10px;
+}
+.index-header .h-infomation .h-infomation-l .h-infomation-l-2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.index-header .h-infomation .h-infomation-l .h-infomation-l-2 span.h-infomation-l-2-tel {
+  color: #07a8dc;
+  display: inline-block;
+  background: url("../../images/renovation_index_06-04.gif") no-repeat left center;
+  padding-left: 30px;
+}
+.index-header .h-infomation .h-infomation-l .h-infomation-l-2 span.h-infomation-l-2-qq {
+  color: #eb3d00;
+  display: inline-block;
+  background: url("../../images/renovation_index_09.gif") no-repeat left center;
+  padding-left: 30px;
+}
+.index-header .h-infomation .h-infomation-r {
+  float: left;
+  margin: 10px 0 0 20px;
+}
 .index-menu {
   margin-bottom: 17px;
   height: 70px;
@@ -113,8 +149,14 @@
 }
 .index-h-2 .index-h-2-l {
   float: left;
-  width: 862px;
+  width: 861px;
+  height: 461px;
   position: relative;
+}
+.index-h-2 .index-h-2-l .imgabsolute {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .index-h-2 .index-h-2-l .index-entrance-bg {
   position: absolute;
@@ -124,6 +166,69 @@
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: #000;
+  display: inline-block;
+}
+.index-h-2 .index-h-2-l .info {
+  position: absolute;
+  top: 74px;
+  width: 370px;
+  height: 290px;
+}
+.index-h-2 .index-h-2-l .info .m {
+  color: #fff;
+  font-size: 14px;
+  margin: 30px 0 0 20px;
+}
+.index-h-2 .index-h-2-l .ui-tabpanel {
+  margin-top: 30px;
+}
+.index-h-2 .index-h-2-l .ui-tabpanel .ui-tabpanel-h {
+  height: 32px;
+}
+.index-h-2 .index-h-2-l .ui-tabpanel .ui-tabpanel-h .tab-iteam {
+  cursor: pointer;
+  font-size: 14px;
+  float: left;
+  color: #fff;
+  display: inline-block;
+  padding: 0 10px;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #787c7c;
+  border-top: 1px solid transparent;
+}
+.index-h-2 .index-h-2-l .ui-tabpanel .ui-tabpanel-h .cur {
+  border-top: 1px solid #787c7c;
+  border-left: 1px solid #787c7c;
+  border-right: 1px solid #787c7c;
+  border-bottom: 1px solid transparent;
+}
+.index-h-2 .index-h-2-l .ui-tabpanel .ui-tabpanel-h .line-left {
+  height: 32px;
+  width: 10px;
+  border-bottom: 1px solid #787c7c;
+  border-top: 1px solid transparent;
+  float: left;
+}
+.index-h-2 .index-h-2-l .ui-tabpanel .ui-tabpanel-h .line-right {
+  height: 32px;
+  width: 200px;
+  border-bottom: 1px solid #787c7c;
+  border-top: 1px solid transparent;
+  float: left;
+}
+.index-h-2 .index-h-2-l .ui-tabpanel .ui-tabpanel-c .mm {
+  width: 152px;
+  float: left;
+  color: #fff;
+  margin: 20px 0 0 15px;
+  font-size: 14px;
+}
+.index-h-2 .index-h-2-l .ui-tabpanel .ui-tabpanel-c .mb {
+  color: #fff;
+  font-size: 14px;
+  clear: both;
+  padding: 20px 0 0 15px;
 }
 .index-h-2 .index-h-2-l .index-entrance-txt-bg {
   position: absolute;
@@ -134,11 +239,91 @@
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: #000;
+  display: inline-block;
+}
+.index-h-2 .index-h-2-l .info-txt {
+  position: absolute;
+  bottom: 54px;
+  right: 22px;
+  width: 345px;
+  height: 153px;
+  color: #fff;
+}
+.index-h-2 .index-h-2-l .info-txt h1 {
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: right;
+  padding-right: 10px;
+}
+.index-h-2 .index-h-2-l .info-txt p {
+  font-size: 16px;
+  padding: 10px;
+}
+.index-h-2 .index-h-2-l .b-tab {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  height: 30px;
+}
+.index-h-2 .index-h-2-l .b-tab .bottom-tab {
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.index-h-2 .index-h-2-l .b-tab .bottom-tab a {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: #83d4ee;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  margin-right: 5px;
+}
+.index-h-2 .index-h-2-l .b-tab .bottom-tab a.cur {
+  background-color: #fff;
 }
 .index-h-2 .index-h-2-r {
   float: right;
   width: 212px;
   margin-right: 10px;
+}
+.index-h-2 .index-h-2-r .i-item {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #dee3e6;
+  background-color: #f8f8f8;
+  color: #00a6db;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.index-h-2 .index-h-2-r .i-item-col {
+  height: 93px;
+  border: 1px solid #dee3e6;
+  background-color: #f8f8f8;
+  clear: both;
+}
+.index-h-2 .index-h-2-r .i-item-col .i-item-icon {
+  display: inline-block;
+}
+.index-h-2 .index-h-2-r .i-item-col .i-item-txt {
+  display: inline-block;
+}
+.index-h-2 .index-h-2-r .i-item-search {
+  zoom: 1;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 8px;
+}
+.index-h-2 .index-h-2-r .i-item-search input {
+  float: left;
+}
+.index-h-2 .index-h-2-r .i-item-search .ui-button {
+  float: left;
+}
+.index-h-2 .index-h-2-r .ml {
+  margin-left: 8px;
 }
 .index-t-l .index-t-l-title {
   height: 27px;
@@ -151,8 +336,11 @@
   color: #fff;
   font-size: 14px;
   min-width: 130px;
+  *width: 130px;
+  _width: 130px;
   text-align: center;
   font-weight: 500;
+  display: inline-block;
 }
 .index-t-l .index-t-l-title a.more {
   float: right;
@@ -162,6 +350,31 @@
 }
 .index-t-l .index-t-l-content {
   padding: 15px;
+}
+/**
+ * ui-form
+ */
+input {
+  border: 1px solid #dee3e6;
+  padding: 4px 5px 5px;
+  margin: 0;
+}
+/**
+ * ui-button
+ */
+.ui-button {
+  color: #fff;
+  border: none;
+  margin: 0;
+  padding: 0 10px;
+  height: 26px;
+  line-height: 26px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+.ui-button-blue {
+  background-color: #07a8dc;
 }
 ul.overturn li {
   float: left;

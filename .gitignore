@@ -4,6 +4,7 @@ ehthumbs.db
 Desktop.ini
 
 /node_modules
+/font
 *.log
 *~
 *.diff
