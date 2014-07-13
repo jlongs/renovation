@@ -58,6 +58,18 @@ module.exports = function(grunt){
                     'dist/css/<%= pkg.name %>.min.css': ['dist/css/<%= pkg.name %>.css']
                 }
             }
+        },
+
+        compress: {
+            dist: {
+                options: {
+                    archive: ("publish/renovation-<%= pkg.version %>.zip")
+                },
+                files: [
+                    { expand: true, cwd: "", src: ["dist/css/Renovation.min.css", "dist/font/**/*", "!dist/font/font-awesome.css", "!dist/font/font-awesome-ie7.css"], dest: "" },
+                    { expand: true, cwd: "", src: ["html/**/*", "images/**/*"], dest: "" }
+                ]
+            }
         }
 
     });
@@ -68,7 +80,9 @@ module.exports = function(grunt){
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
+    grunt.loadNpmTasks("grunt-contrib-compress");
 
     grunt.registerTask('default', ['less:development', 'usebanner', 'copy', 'cssmin']);
     grunt.registerTask('build', ['less:development']);
+    grunt.registerTask('publish', ['compress']);
 }

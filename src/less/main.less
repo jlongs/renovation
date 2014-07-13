@@ -52,6 +52,18 @@ ul.level-img{
 		& a{
 			display: inline-block;
 			margin-right: 11px;
+			position: relative;
+			& span{
+				position: absolute;
+				display: block;
+				text-align: center;
+				left: 0;
+				bottom: 0;
+				width: 124px;
+				font-size: 14px;
+				line-height: 30px;
+				color: #fff;
+			}
 		}
 	}
 	& li.clear-margin{
@@ -131,6 +143,17 @@ ul.level-design{
 		height: 273px;
 		float: left;
 		margin-left: 10px;
+		position: relative;
+		.text{
+			position: absolute;
+			width: 150px;
+			text-align: center;
+			bottom: 0;
+			left: 0;
+			line-height: 30px;
+			color: #fff;
+			font-size: 14px;
+		}
 	}
 	.cutover-item-a{
 		width: 150px;
@@ -138,6 +161,17 @@ ul.level-design{
 		float: left;
 		margin-left: 10px;
 		margin-bottom: 12px;
+		position: relative;
+		.text{
+			position: absolute;
+			width: 150px;
+			text-align: center;
+			bottom: 0;
+			left: 0;
+			line-height: 30px;
+			color: #fff;
+			font-size: 14px;
+		}
 	}
 }
 
@@ -187,20 +221,44 @@ ul.level-design{
 
 //装修智库 
 .think{
+	margin-right: 15px;
 	border: 1px solid #dee3e6;
 	height: 204px;
 	width: 250px;
+	overflow: hidden;
+	float: left;
 	.think-h{
 		height: 98px;
 		border-bottom: 1px solid #dee3e6;
 		background-color: #f8f8f8;
-		.h3{
+		& h3{
 			font-size: 14px;
 			color: #060606;
 			float: left;
+			display: inline-block;
+			margin: 70px 0 0 10px
 		}
 		& span.icon{
+			margin-top: 20px;
 			float: right;
+			margin-right: 20px;
+			font-size: 18px;
+			color: #b4e2f0;
 		}
+	}
+	.think-c{
+		padding: 10px;
+		& ul li{
+			float: left;
+ 			a{
+				line-height: 21px;
+				padding: 0 10px;
+				white-space: nowrap;
+			}
+		}
+	}
+
+	&.none-margin{
+		margin-right: 0;
 	}
 }
