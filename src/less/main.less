@@ -15,7 +15,7 @@
 
 // @import "ui-panel.less";
 
-// @import "ui-table.less";
+@import "ui-table.less";
 
 // @import "ui-page.less";
 
@@ -138,6 +138,63 @@ ul.level-design{
 			}
 		}
 	}
+	.cutover-control-hddq{
+		width: 820px;
+		height: 249px;
+		float: left;
+		.cutover-bottom{
+			background-color: #07a8dc;
+			height: 30px;
+			overflow: hidden;
+			& h3.cutover-bottom-txt{
+				font-size: 14px;
+				color: #fff;
+				float: left;
+				line-height: 30px;
+				font-weight: 500;
+				padding-left: 10px;
+			}
+			.cutover-bottom-tab{
+				float: right;
+				margin-top: 5px;
+				margin-right: 10px;
+				& a{
+					display: inline-block;
+					height: 8px;
+					width: 8px;
+					background-color: #83d4ee;
+					.border-radius(6px);
+					margin-right: 5px;
+					&.cur{
+						background-color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.cutover-right-hddq{
+		float: right;
+		width: 258px;
+		.i-item{
+			width: 258px;
+			height: 118px;
+			.i-item-icon{
+				float: left;
+				color: #fff;
+				margin: 40px 10px 0 60px;
+			}
+			.i-item-txt{
+				float: left;
+				color: #fff;
+				font-size: 16px;
+				margin: 45px 0 0 0;
+				cursor: pointer;
+			}
+		}
+		.mt{
+			margin-top: 13px;
+		}
+	}
 	.cutover-item-v{
 		width: 150px;
 		height: 273px;
@@ -219,6 +276,40 @@ ul.level-design{
 	}
 }
 
+ul.hddc-img-list{
+	& li{
+		width: 350px;
+		float: left;
+		margin: 10px 10px 0 0;
+		&.norightmargin{
+			margin-right: 0;
+		}
+		.hdpic{
+			width: 350px;
+			height: 250px;
+		}
+		.hdcontent{
+			border: 1px solid #dee3e6;
+			border-top: none;
+			width: 348px;
+			& a.hdtxt{
+				display: block;
+				color: #060606;
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 30px;
+				width: 348px;
+			}
+			& p.hdinfo{
+				font-size: 12px;
+				color: #6f6f6f;
+				line-height: 30px;
+				padding: 0 10px;
+			}
+		}
+	}
+}
+
 //装修智库 
 .think{
 	margin-right: 15px;
@@ -261,4 +352,8 @@ ul.level-design{
 	&.none-margin{
 		margin-right: 0;
 	}
+}
+
+.MT{
+	margin-top: 10px;
 }

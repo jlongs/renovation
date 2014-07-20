@@ -1,8 +1,3 @@
-/**
- * Renovation one v1.0.0
- */
-
-
 @import "reset.css";
 @import "text.css";
 @import "1120-16-fpi.css";
@@ -107,7 +102,6 @@
 }
 .index-menu {
   margin-bottom: 17px;
-  height: 70px;
   overflow: hidden;
   background-color: #232a32;
 }
@@ -144,8 +138,105 @@
 .index-menu ul li.cur a.index-menu-item span {
   color: #fff;
 }
+.index-menu .sub-menu-cls {
+  clear: both;
+  background-color: #00a8de;
+  height: 46px;
+}
+.index-menu .sub-menu-cls ul li {
+  border-right: 1px solid #46bbe1;
+  height: 32px;
+  margin-top: 8px;
+}
+.index-menu .sub-menu-cls ul li a {
+  padding: 0 37px;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.zx-company-left {
+  width: 616px;
+  height: 441px;
+  float: left;
+}
+.zx-company-right {
+  width: 484px;
+  height: 441px;
+  background-color: #232a32;
+  float: right;
+}
+.zx-company-right .c-tab-title {
+  margin: 20px 35px 0;
+  height: 39px;
+  line-height: 39px;
+}
+.zx-company-right .c-tab-title a {
+  padding: 0 10px;
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  color: #07a8dc;
+}
+.zx-company-right .c-tab-title a.cur {
+  color: #fff;
+}
+.zx-company-right .c-tab-title span {
+  display: inline-block;
+  float: right;
+  color: #fff;
+}
+.zx-company-right .c-tab-body {
+  margin: 30px 15px 0;
+}
+.zx-company-right .c-tab-body p {
+  clear: both;
+  margin-bottom: 15px;
+}
+.zx-company-right .c-tab-body p label {
+  color: #fff;
+  width: 50px;
+  text-align: right;
+  padding-right: 5px;
+  display: inline-block;
+  font-size: 14px;
+}
+.zx-company-right .c-tab-body p label.b-label-title {
+  float: left;
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 4px;
+}
+.zx-company-right .c-tab-foot {
+  margin: 30px 60px 0;
+}
+.zx-company-right .c-tab-foot span {
+  display: inline-block;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+.zx-company-right .notice {
+  margin-top: 30px;
+  border-top: 1px solid #4f555b;
+  line-height: 50px;
+}
+.zx-company-right .notice .notice-b {
+  margin: 0 50px;
+  color: #bcbdbf;
+}
+.notic-txt {
+  margin: 17px 0 20px;
+  border: 1px solid #dfe4e7;
+  background-color: #f2f5f7;
+  padding: 14px 0 12px;
+  text-align: center;
+  clear: both;
+}
 .index-menu-new {
-  margin-bottom: 17px;
+  margin: 17px 0 20px;
   height: 40px;
   overflow: hidden;
   background-color: #fff;
@@ -589,6 +680,23 @@ ul.bzfw li {
   font-weight: 500;
   display: inline-block;
 }
+.index-t-l .index-t-l-title .t-r-tab {
+  margin-right: 20px;
+  float: right;
+}
+.index-t-l .index-t-l-title .t-r-tab a {
+  display: inline-block;
+  background-color: #4d5661;
+  padding: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+.index-t-l .index-t-l-title .t-r-tab a.cur {
+  color: #00a8de;
+  background-color: #fff;
+  border: 1px solid #dee3e6;
+  border-bottom: none;
+}
 .index-t-l .index-t-l-title a.more {
   float: right;
   color: #333333;
@@ -617,6 +725,58 @@ ul.bzfw li {
 }
 .index-footer .index-footer-right a {
   color: #fff;
+}
+/**
+ * ui-table
+ */
+.ui-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+.ui-table tr th {
+  height: 36px;
+  background-color: #07a8dc;
+  line-height: 36px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+.ui-table tr td {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  color: #737373;
+}
+.ui-table tr td a {
+  color: #01a469;
+  text-decoration: none;
+}
+.ui-table tr td.txt-align-c {
+  text-align: center;
+}
+.ui-table tr.double td {
+  background-color: #f5f6f6;
+}
+.ui-table-layout {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+.ui-table-layout tr td {
+  padding: 10px;
+}
+.ui-table-vertical tr th {
+  border-top: none;
+  border-bottom: 1px solid #dddddd;
+  text-align: right;
+  font-weight: 500;
+  padding-right: 15px;
+}
+.ui-table-vertical tr td {
+  border-bottom: 1px solid #dddddd;
 }
 /**
  * ui-form
@@ -731,6 +891,65 @@ ul.level-design li.clear-margin a {
 .cutover .cutover-control .cutover-bottom .cutover-bottom-tab a.cur {
   background-color: #fff;
 }
+.cutover .cutover-control-hddq {
+  width: 820px;
+  height: 249px;
+  float: left;
+}
+.cutover .cutover-control-hddq .cutover-bottom {
+  background-color: #07a8dc;
+  height: 30px;
+  overflow: hidden;
+}
+.cutover .cutover-control-hddq .cutover-bottom h3.cutover-bottom-txt {
+  font-size: 14px;
+  color: #fff;
+  float: left;
+  line-height: 30px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.cutover .cutover-control-hddq .cutover-bottom .cutover-bottom-tab {
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.cutover .cutover-control-hddq .cutover-bottom .cutover-bottom-tab a {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: #83d4ee;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  margin-right: 5px;
+}
+.cutover .cutover-control-hddq .cutover-bottom .cutover-bottom-tab a.cur {
+  background-color: #fff;
+}
+.cutover .cutover-right-hddq {
+  float: right;
+  width: 258px;
+}
+.cutover .cutover-right-hddq .i-item {
+  width: 258px;
+  height: 118px;
+}
+.cutover .cutover-right-hddq .i-item .i-item-icon {
+  float: left;
+  color: #fff;
+  margin: 40px 10px 0 60px;
+}
+.cutover .cutover-right-hddq .i-item .i-item-txt {
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  margin: 45px 0 0 0;
+  cursor: pointer;
+}
+.cutover .cutover-right-hddq .mt {
+  margin-top: 13px;
+}
 .cutover .cutover-item-v {
   width: 150px;
   height: 273px;
@@ -806,6 +1025,37 @@ ul.level-design li.clear-margin a {
 .cutover-2 .cutover-2-3 .cutover-2-3-item a:hover {
   text-decoration: none;
 }
+ul.hddc-img-list li {
+  width: 350px;
+  float: left;
+  margin: 10px 10px 0 0;
+}
+ul.hddc-img-list li.norightmargin {
+  margin-right: 0;
+}
+ul.hddc-img-list li .hdpic {
+  width: 350px;
+  height: 250px;
+}
+ul.hddc-img-list li .hdcontent {
+  border: 1px solid #dee3e6;
+  border-top: none;
+  width: 348px;
+}
+ul.hddc-img-list li .hdcontent a.hdtxt {
+  display: block;
+  color: #060606;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  width: 348px;
+}
+ul.hddc-img-list li .hdcontent p.hdinfo {
+  font-size: 12px;
+  color: #6f6f6f;
+  line-height: 30px;
+  padding: 0 10px;
+}
 .think {
   margin-right: 15px;
   border: 1px solid #dee3e6;
@@ -846,4 +1096,7 @@ ul.level-design li.clear-margin a {
 }
 .think.none-margin {
   margin-right: 0;
+}
+.MT {
+  margin-top: 10px;
 }

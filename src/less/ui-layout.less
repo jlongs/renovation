@@ -49,7 +49,6 @@
 //header菜单
 .index-menu{
 	margin-bottom: 17px;
-	height: 70px;
 	overflow: hidden;
 	background-color: #232a32;
 	& ul li{
@@ -89,11 +88,113 @@
 			}
 		}
 	}
+	.sub-menu-cls{
+		clear: both;
+		background-color: #00a8de;
+		height: 46px;
+		& ul{
+			& li{
+				border-right: 1px solid #46bbe1;
+				height: 32px;
+				margin-top: 8px;
+				& a{
+					padding: 0 37px;
+					display: inline-block;
+					height: 32px;
+					line-height: 32px;
+					color: #fff;
+					text-decoration: none;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+.zx-company-left{
+	width: 616px;
+	height: 441px;
+	float: left;
+}
+.zx-company-right{
+	width: 484px;
+	height: 441px;
+	background-color: #232a32;
+	float: right;
+	.c-tab-title{
+		margin: 20px 35px 0;
+		height: 39px;
+		line-height: 39px;
+		& a{
+			padding: 0 10px;
+			display: inline-block;
+			float: left;
+			font-size: 16px;
+			color: #07a8dc;
+			&.cur{
+				color: #fff;
+			}
+		}
+		& span{
+			display: inline-block;
+			float: right;
+			color: #fff;
+		}
+	}
+	.c-tab-body{
+		margin: 30px 15px 0;
+		& p{
+			clear: both;
+			margin-bottom: 15px;
+			& label{
+				color: #fff;
+				width: 50px;
+				text-align: right;
+				padding-right: 5px;
+				display: inline-block;
+				font-size: 14px;
+				&.b-label-title{
+					float: left;
+					display: inline-block;
+					margin-top: 3px;
+					margin-right: 4px;
+				}
+			}
+		}
+	}
+	.c-tab-foot{
+		margin: 30px 60px 0;
+		& span{
+			display: inline-block;
+			padding-left: 10px;
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+	.notice{
+		margin-top: 30px;
+		border-top: 1px solid #4f555b;
+		line-height: 50px;
+		.notice-b{
+			margin: 0 50px;
+			color: #bcbdbf;
+		}
+	}
+}
+
+
+.notic-txt{
+	margin: 17px 0 20px;
+	border: 1px solid #dfe4e7;
+	background-color: #f2f5f7;
+	padding: 14px 0 12px;
+	text-align: center;
+	clear: both;
 }
 
 //header菜单
 .index-menu-new{
-	margin-bottom: 17px;
+	margin: 17px 0 20px;
 	height: 40px;
 	overflow: hidden;
 	background-color: #fff;
@@ -578,6 +679,23 @@ ul.bzfw{
 			text-align: center;
 			font-weight: 500;
 			display: inline-block;
+		}
+		.t-r-tab{
+			margin-right: 20px;
+			float: right;
+			& a{
+				display: inline-block;
+				background-color: #4d5661;
+				padding: 0 15px;
+				color: #fff;
+				text-decoration: none;
+				&.cur{
+					color: #00a8de;
+					background-color: #fff;
+					border: 1px solid #dee3e6;
+					border-bottom: none;
+				}
+			}
 		}
 		& a.more{
 			float: right;
