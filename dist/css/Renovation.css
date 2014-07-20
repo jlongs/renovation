@@ -1,3 +1,8 @@
+/**
+ * Renovation one v1.0.0
+ */
+
+
 @import "reset.css";
 @import "text.css";
 @import "1120-16-fpi.css";
@@ -1099,4 +1104,23 @@ ul.hddc-img-list li .hdcontent p.hdinfo {
 }
 .MT {
   margin-top: 10px;
+}
+.question-2-left {
+  float: left;
+  width: 850px;
+}
+.question-2-right {
+  float: right;
+  width: 220px;
+}
+.question-3-left {
+  float: left;
+  width: 200px;
+}
+.question-3-right {
+  float: right;
+  width: 220px;
+}
+.question-3-center {
+  margin: 0 250px 0 230px;
 }
