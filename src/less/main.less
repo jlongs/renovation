@@ -17,7 +17,7 @@
 
 @import "ui-table.less";
 
-// @import "ui-page.less";
+@import "ui-page.less";
 
 @import "ui-form.less";
 
@@ -370,12 +370,391 @@ ul.hddc-img-list{
 .question-3-left{
 	float: left;
 	width: 200px;
+	margin-top: 20px;
 }
 .question-3-right{
 	float: right;
 	width: 220px;
+	margin-top: 20px;
 
 }
 .question-3-center{
 	margin: 0 250px 0 230px;
+	margin-top: 20px;
+}
+
+
+//设计师
+.sjs-items{
+	margin-top: 10px;
+	padding-bottom: 10px;
+	height: 219px;
+	border-bottom: 1px solid #dee3e6;
+	.sjs-items-left{
+		float: left;
+		width: 260px;
+		margin-left: 15px;
+		.cutover-control-sjs{
+			width: 260px;
+			height: 219px;
+			position: relative;
+			.cutover-content{
+				width: 260px;
+				height: 219px;
+			}
+			.cutover-bottom{
+				.opacity(25);
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				left: 0;
+				background-color: #000;
+				height: 21px;
+				overflow: hidden;
+			}
+			.cutover-bottom-tab{
+				position: absolute;
+				bottom: 1px;
+				right: 10px;
+				& a{
+					font-size: 0;
+					display: inline-block;
+					height: 8px;
+					width: 8px;
+					background-color: #83d4ee;
+					.border-radius(6px);
+					margin-right: 5px;
+					&.cur{
+						background-color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.sjs-items-right{
+		float: right;
+		width: 560px;
+		.sjs-title{
+			height: 32px;
+			& span.small-img{
+				float: left;
+			}
+			& span.v-img{
+				float: left;
+				display: inline-block;
+				margin: 5px 0 0 10px;
+			}
+			& h3{
+				float: left;
+				display: inline-block;
+				font-size: 18px;
+				margin-left: 10px;
+				line-height: 32px;
+			}
+		}
+		.sjs-content{
+			background-color: #f8f8f8;
+			padding: 10px 10px 10px 20px;
+			& p{
+				margin-top: 10px;
+				color: #606060;
+				line-height: 24px;
+			}
+			.area{
+				color: #060606;
+				line-height: 30px;
+			}
+			.info{
+				color: #00a8de;
+				line-height: 40px;
+			}
+			.con-t{
+				margin-top: 13px;
+				& span{
+					display: inline-block;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}
+
+.sjs-r-panel{
+	border: 1px solid #dee3e6;
+	background-color: #f8f8f8;
+	& a.sjs-bm{
+		background-color: #00a8de;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		text-decoration: none;
+		color: #fff;
+		font-size: 12px;
+		display: block;
+	}
+	.s-title{
+		height: 47px;
+		& h3{
+			padding-left: 10px;
+			float: left;
+			line-height: 47px;
+			font-size: 14px;
+			font-weight: 500;
+		}
+		.control{
+			margin: 10px 10px 0 0;
+			float: right;
+			& i{
+				color: #07a8dc;
+			}
+		}
+	}
+	.s-title-sub{
+		color: #00a8de;
+		font-size: 12px;
+		margin-bottom: 10px;
+		padding-left: 10px;
+	}
+	.s-content{
+		& ul.img{
+			 li{
+				float: left;
+				margin: 0 0 6px 6px;
+				& a{
+					display: inline-block;
+					width: 98px;
+					height: 98px;
+					border: 1px solid #e8e8e8;
+				}
+			}
+		}
+		& ul.txt{
+			margin-left: 10px;
+			li{
+				& a{
+					display: block;
+					background: url("../../images/icon.gif") no-repeat 0 center;
+					line-height: 30px;
+					color: #1e1f20;
+					padding-left: 10px;
+				}
+			}
+		}
+
+
+	}
+}
+
+.company-items{
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #dee3e6;
+	.company-items-left{
+		width: 148px;
+		height: 138px;
+		border: 1px solid #dee3e6;
+		margin-left: 18px;
+		float: left;
+	}
+	.company-items-right{
+		width: 240px;
+		float: right;
+		.b-t{
+			margin-top: 8px;
+			text-align: center;
+		}
+		.b-img{
+			text-align: center;
+		}
+	}
+	.company-items-center{
+		margin-left: 184px;
+		margin-right: 244px;
+		& h3{
+			font-size: 18px;
+			line-height: 40px;
+		}
+		.sub{
+			margin-top: 5px;
+			& span{
+				display: inline-block;
+				background: url("../../images/company_yyzz.gif") no-repeat 0 center;
+				padding-left: 20px;
+				margin-left: 10px;
+			}
+		}
+		.address{
+			line-height: 40px;
+		}
+		.s-t{
+			background-color: #f7f9fa;
+			height: 28px;
+			line-height: 28px;
+			& a{
+				display: inline-block;
+				color: #00a8de;
+				padding: 0 15px;
+			}
+			& span{
+				color: #9ebac3;
+				display: inline-block;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+
+.c-t-area{
+	background-color: #f2f5f7;
+	height: 163px;	
+	padding: 20px;
+	& textarea{
+		border: 1px solid #d9dfe3;
+		width: 99%;
+	}
+	.type{
+		margin-top: 10px;
+		.type-left{
+			float: left;
+		}
+		.type-right{
+			float: right;
+		}
+	}
+}
+.q-img-area{
+	width: 220px;
+	height: 203px;
+	position: relative;
+	.cutover-bottom{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 30px;
+		.bg{
+			height: 30px;
+			background-color: #000;
+			.opacity(50);
+		}
+	}
+	& h3.cutover-bottom-txt{
+		position: absolute;
+		bottom: 0;
+		left: 5px;
+		line-height: 30px;
+		font-size: 12px;
+		font-weight: 500;
+		color: #fff;
+	}
+	.cutover-bottom-tab{
+		position: absolute;
+		bottom: 5px;
+		right: 3px;
+		& a{
+			display: inline-block;
+			height: 8px;
+			width: 8px;
+			background-color: #83d4ee;
+			.border-radius(6px);
+			margin-right: 5px;
+			&.cur{
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+
+ul.question-list-info{
+	& li{
+		line-height: 32px;
+		padding-left: 10px;
+		& a{
+			color: #07a8dc;
+			text-decoration: none;
+		}
+		&.double{
+			background-color: #f5f6f6;
+		}
+	}
+}
+.question-type{
+	border: 1px solid #dee3e6;
+	padding: 10px;
+	.question-type-title{
+		margin-top: 10px;
+		height: 35px;
+		& h3{
+			font-weight: 500;
+			font-size: 14px;
+			color: #07a8dc;
+			float: left;
+		}
+		& i{
+			margin: 5px 0 0 0;
+			float: right;
+			color: #d8d8d7;
+			cursor: pointer;
+		}
+	}
+	.question-type-content{
+		clear: both;
+		overflow: hidden;
+		& ul{
+			& li{
+				float: left;
+				margin-right: 10px;
+				line-height: 30px;
+				& a{
+					color: #6c6c6c;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+
+.index-menu-new-2{
+	margin: 0 auto;
+	width: 1120px;
+	height: 266px;
+	position: relative;
+	margin-bottom: 20px;
+	.bg{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		left: 0;
+		height: 30px;
+		line-height: 30px;
+		.opacity(50);
+		background-color: #000;
+	}
+	& ul{
+		position: absolute;
+		left: 20px;
+		top: 0;
+		height: 30px;
+		line-height: 30px;
+		& li{
+			float: left;
+			&.cur{
+				& a{
+					color: #00a8de;
+				}
+			}
+			& a{
+				color: #fff;
+				display: inline-block;
+				padding: 0 20px;
+				&:hover{
+					color: #00a8de;
+				}
+			}
+		}
+	}
 }
