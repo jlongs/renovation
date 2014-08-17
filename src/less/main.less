@@ -758,3 +758,146 @@ ul.question-list-info{
 		}
 	}
 }
+
+
+//pic detail
+.xgt-detail{
+	margin-top: 20px;
+	.crumbs{
+		color: #999;
+		line-height: 30px;
+		padding-left: 10px;
+		& i{
+			margin-right: 10px;
+		}
+	}
+	.img_box{
+		position: relative;
+		margin-top: 20px;
+		.img_div{
+			margin: 0 auto;
+			width: 700px;
+
+		}
+		.pre{
+			position: absolute;
+			top: 50%;
+			left: 10px;
+			color: #999;
+			font-size: 40px;
+			& i{
+				cursor: pointer;
+			}
+		}
+		.next{
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			color: #999;
+			font-size: 40px;
+			& i{
+				cursor: pointer;
+			}
+		}
+	}
+	.toggle_img_box{
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		font-size: 20px;
+		color: #b4b4b4;
+		cursor: pointer;
+	}
+	.smail-items-con{
+		position: relative;
+		.smail_items{
+			width: 700px;
+			margin: 0 auto;
+			height: 86px;
+			overflow: hidden;
+			& ul{
+				width: 2000px;
+				height: 86px;
+				& li{
+					height: 86px;
+					margin: 0 3px;
+					float: left;
+					& a{
+						display: inline-block;
+						width: 86px;
+						height: 86px;
+						overflow: hidden;
+					}
+				}
+			}
+		}
+		.pre{
+			position: absolute;
+			top: 30%;
+			left: 40px;
+			color: #b4b4b4;
+			font-size: 30px;
+			& i{
+				cursor: pointer;
+			}
+		}
+		.next{
+			position: absolute;
+			top: 30%;
+			right: 40px;
+			color: #b4b4b4;
+			font-size: 30px;
+			& i{
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+//renovation-dialog
+.renovation-dialog{
+	background-color: #333;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	.opacity(60);
+}
+.r-dialog-con{
+	width: 360px;
+	height: 120px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -180px;
+	margin-top: -60px;
+	z-index: 9999;
+	.close{
+		float: right;
+		color: #999;
+		margin: 3px 10px 0 0;
+		cursor: pointer;
+		font-size: 20px;
+	}
+	& h1{
+		border-bottom: 1px solid #b4b4b4;
+		margin: 30px 10px 0;
+		text-align: center;
+		line-height: 40px;
+		color: #07a8dc;
+		& i{
+			margin-right: 5px;
+		}
+	}
+	& p{
+		line-height: 30px;
+		text-align: center;
+		color: #999;
+	}
+}
+
+
+
+

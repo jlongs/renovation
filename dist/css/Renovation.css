@@ -1,8 +1,3 @@
-/**
- * Renovation one v1.0.0
- */
-
-
 @import "reset.css";
 @import "text.css";
 @import "1120-16-fpi.css";
@@ -301,6 +296,7 @@
   width: 370px;
   height: 290px;
   opacity: 0.5;
+  -moz-opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: #000;
   display: inline-block;
@@ -374,6 +370,7 @@
   width: 345px;
   height: 153px;
   opacity: 0.5;
+  -moz-opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: #000;
   display: inline-block;
@@ -1205,6 +1202,7 @@ ul.hddc-img-list li .hdcontent p.hdinfo {
 }
 .sjs-items .sjs-items-left .cutover-control-sjs .cutover-bottom {
   opacity: 0.25;
+  -moz-opacity: 0.25;
   filter: alpha(opacity=25);
   position: absolute;
   bottom: 0;
@@ -1428,6 +1426,7 @@ ul.hddc-img-list li .hdcontent p.hdinfo {
   height: 30px;
   background-color: #000;
   opacity: 0.5;
+  -moz-opacity: 0.5;
   filter: alpha(opacity=50);
 }
 .q-img-area h3.cutover-bottom-txt {
@@ -1516,6 +1515,7 @@ ul.question-list-info li.double {
   height: 30px;
   line-height: 30px;
   opacity: 0.5;
+  -moz-opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: #000;
 }
@@ -1539,4 +1539,138 @@ ul.question-list-info li.double {
 }
 .index-menu-new-2 ul li a:hover {
   color: #00a8de;
+}
+.xgt-detail {
+  margin-top: 20px;
+}
+.xgt-detail .crumbs {
+  color: #999;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.xgt-detail .crumbs i {
+  margin-right: 10px;
+}
+.xgt-detail .img_box {
+  position: relative;
+  margin-top: 20px;
+}
+.xgt-detail .img_box .img_div {
+  margin: 0 auto;
+  width: 700px;
+}
+.xgt-detail .img_box .pre {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: #999;
+  font-size: 40px;
+}
+.xgt-detail .img_box .pre i {
+  cursor: pointer;
+}
+.xgt-detail .img_box .next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: #999;
+  font-size: 40px;
+}
+.xgt-detail .img_box .next i {
+  cursor: pointer;
+}
+.xgt-detail .toggle_img_box {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  color: #b4b4b4;
+  cursor: pointer;
+}
+.xgt-detail .smail-items-con {
+  position: relative;
+}
+.xgt-detail .smail-items-con .smail_items {
+  width: 700px;
+  margin: 0 auto;
+  height: 86px;
+  overflow: hidden;
+}
+.xgt-detail .smail-items-con .smail_items ul {
+  width: 2000px;
+  height: 86px;
+}
+.xgt-detail .smail-items-con .smail_items ul li {
+  height: 86px;
+  margin: 0 3px;
+  float: left;
+}
+.xgt-detail .smail-items-con .smail_items ul li a {
+  display: inline-block;
+  width: 86px;
+  height: 86px;
+  overflow: hidden;
+}
+.xgt-detail .smail-items-con .pre {
+  position: absolute;
+  top: 30%;
+  left: 40px;
+  color: #b4b4b4;
+  font-size: 30px;
+}
+.xgt-detail .smail-items-con .pre i {
+  cursor: pointer;
+}
+.xgt-detail .smail-items-con .next {
+  position: absolute;
+  top: 30%;
+  right: 40px;
+  color: #b4b4b4;
+  font-size: 30px;
+}
+.xgt-detail .smail-items-con .next i {
+  cursor: pointer;
+}
+.renovation-dialog {
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  opacity: 0.6;
+  -moz-opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.r-dialog-con {
+  width: 360px;
+  height: 120px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -180px;
+  margin-top: -60px;
+  z-index: 9999;
+}
+.r-dialog-con .close {
+  float: right;
+  color: #999;
+  margin: 3px 10px 0 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.r-dialog-con h1 {
+  border-bottom: 1px solid #b4b4b4;
+  margin: 30px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  color: #07a8dc;
+}
+.r-dialog-con h1 i {
+  margin-right: 5px;
+}
+.r-dialog-con p {
+  line-height: 30px;
+  text-align: center;
+  color: #999;
 }
